@@ -3,24 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Site Pro</title>
+    <title>LoulouBoost - Guide Durable</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <style>body { font-family: 'Plus Jakarta Sans', sans-serif; }</style>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #fdfdfd; }
+    </style>
 </head>
-<body class="bg-slate-50 text-slate-900">
-    <nav class="p-6 flex justify-between items-center max-w-6xl mx-auto">
-        <div class="font-bold text-xl">MON LOGO</div>
-        <a href="#" class="bg-black text-white px-5 py-2 rounded-full text-sm">Contact</a>
-    </nav>
-    <main class="max-w-4xl mx-auto text-center mt-20 px-4">
-        <h1 class="text-5xl md:text-7xl font-bold tracking-tight mb-6">Bienvenue chez moi.</h1>
-        <p class="text-xl text-slate-600 mb-10">Un site simple, moderne et entièrement personnalisable.</p>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">✨ Design</div>
-            <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">🚀 Rapidité</div>
-            <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">🛠️ Code Pro</div>
+<body class="text-[#1A1A1A]">
+
+    <nav class="flex justify-between items-center px-6 py-6 max-w-6xl mx-auto">
+        <div class="text-2xl font-extrabold tracking-tighter uppercase">Loulou<span class="text-orange-500">Boost</span></div>
+        <div class="hidden md:flex space-x-8 font-semibold text-sm text-gray-600 items-center">
+            <a href="#" class="hover:text-black">Guides</a>
+            <a href="#" class="hover:text-black">Notre vision</a>
+            <a href="#" class="bg-[#FFEB3B] text-black px-5 py-2.5 rounded-full shadow-sm hover:scale-105 transition transform">Soutenez-nous</a>
         </div>
-    </main>
+    </nav>
+
+    <header class="max-w-4xl mx-auto text-center mt-16 px-4">
+        <div class="flex justify-center mb-8">
+            <span class="text-6xl">🍎</span>
+        </div>
+
+        <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight leading-tight mb-6">
+            Découvrez votre ville, <br>
+            <span class="text-orange-500">autrement.</span>
+        </h1>
+
+        <p class="text-lg text-gray-500 max-w-xl mx-auto mb-16 font-medium">
+            Facilitez vos choix durables : trouvez des restaurants et des magasins éco-responsables près de chez vous.
+        </p>
+    </header>
+
+    <section class="max-w-6xl mx-auto px-6 pb-20">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="group relative overflow-hidden rounded-2xl aspect-[4/5] bg-gray-100 shadow-md">
+                <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=400" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                <div class="absolute bottom-0 left-0 p-4 w-full bg-gradient-to-t from-black/60 to-transparent">
+                    <p class="text-white font-bold text-sm">Marchés Bio</p>
+                </div>
+            </div>
+            <div class="group relative overflow-hidden rounded-2xl aspect-[4/5] bg-gray-100 shadow-md">
+                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=400" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                <div class="absolute bottom-0 left-0 p-4 w-full bg-gradient-to-t from-black/60 to-transparent">
+                    <p class="text-white font-bold text-sm">Restaurants</p>
+                </div>
+            </div>
+            <div class="group relative overflow-hidden rounded-2xl aspect-[4/5] bg-gray-100 shadow-md">
+                <img src="https://images.unsplash.com/photo-1506452305024-9d3f02d1c906?auto=format&fit=crop&q=80&w=400" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                <div class="absolute bottom-0 left-0 p-4 w-full bg-gradient-to-t from-black/60 to-transparent">
+                    <p class="text-white font-bold text-sm">Vrac & Zéro Déchet</p>
+                </div>
+            </div>
+            <div class="group relative overflow-hidden rounded-2xl aspect-[4/5] bg-gray-100 shadow-md">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=400" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                <div class="absolute bottom-0 left-0 p-4 w-full bg-gradient-to-t from-black/60 to-transparent">
+                    <p class="text-white font-bold text-sm">Communauté</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
 </html>
