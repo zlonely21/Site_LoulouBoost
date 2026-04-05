@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LoulouBoost - Guide Durable</title>
+    <title>Les Boosts - LoulouBoost</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
     <style>
@@ -12,22 +12,104 @@
 </head>
 <body class="text-[#1A1A1A]">
 
-    <nav class="flex justify-between items-center px-6 py-6 max-w-6xl mx-auto">
+    <nav class="flex flex-col md:flex-row justify-between items-center px-6 py-6 max-w-6xl mx-auto gap-6 md:gap-0">
         <a href="index.html" class="group flex items-center justify-center h-20 w-20 md:h-24 md:w-24 rounded-full border-4 border-white shadow-lg overflow-hidden p-2.5 transition-all hover:shadow-xl" style="background-color: #f8f6f2;">
-    <img src="logo.png" alt="LoulouBoost" class="w-full h-full object-cover scale-110">
-</a>
-        <div class="hidden md:flex space-x-8 font-semibold text-sm text-gray-600 items-center">
-            <a href="#" class="hover:text-black">Loulou qui ?</a>
-            <a href="#" class="hover:text-black">Les Boosts</a>
-            <a href="#" class="hover:text-black">Témoignages</a>
-            <a href="#" class="bg-[#D58490] text-black px-5 py-2.5 rounded-full shadow-sm hover:scale-105 transition transform">Pret à booster</a>
+            <img src="logo.png" alt="LoulouBoost" class="w-full h-full object-cover scale-110">
+        </a>
+        
+        <div class="flex flex-col md:flex-row items-center gap-6 md:gap-8 font-semibold text-sm text-gray-600">
+            <div class="flex gap-6 md:gap-8">
+                <a href="qui.html" class="hover:text-black transition">Loulou qui ?</a>
+                <a href="boosts.html" class="text-black transition">Les Boosts</a>
+                <a href="temoignages.html" class="hover:text-black transition">Témoignages</a>
+            </div>
+            <a href="contact.html" class="bg-[#D58490] text-black px-6 py-2.5 rounded-full shadow-sm hover:scale-105 transition transform font-bold text-center">
+                Pret à booster
+            </a>
         </div>
     </nav>
-    <main class="max-w-4xl mx-auto mt-20 px-6 pb-20">
-        <h1 class="text-4xl font-extrabold mb-8">Titre de ma page</h1>
-        <p class="text-lg text-gray-600 leading-relaxed">
-            Ici, tu écris ton texte personnalisé pour présenter ton projet ou tes témoignages.
+
+    <header class="max-w-5xl mx-auto text-center mt-16 px-6">
+        <div class="inline-block px-5 py-2 mb-8 text-sm font-extrabold tracking-widest uppercase rounded-full" 
+             style="color: #4A5548; background-color: #f8f6f2; border: 1px solid #4A554830;">
+            Nos Accompagnements
+        </div>
+
+        <h1 class="text-5xl md:text-6xl font-extrabold mb-8" style="color: #4A5548;">
+            Nos <span style="color: #E9664D;" class="italic">Boosts</span> sur-mesure.
+        </h1>
+
+        <p class="text-xl text-gray-500 max-w-3xl mx-auto mb-10 leading-relaxed">
+            Nous accompagnons les acteurs engagés dans leur déploiement créatif et stratégique.<br>
+            <span class="font-bold" style="color: #4A5548;">Sublimons votre singularité en votre plus beau rayonnement.</span>
         </p>
-    </main>
+    </header>
+
+    <section class="max-w-6xl mx-auto px-6 py-16">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+            
+            <div class="bg-white rounded-[3rem] p-10 shadow-xl border border-gray-100 transition hover:scale-105">
+                <div class="h-16 w-16 rounded-2xl bg-[#f8f6f2] flex items-center justify-center text-3xl mb-6">🌱</div>
+                <h3 class="text-2xl font-bold mb-4" style="color: #4A5548;">Le Boost Initial</h3>
+                <p class="text-gray-500 mb-8 text-sm leading-relaxed">Parfait pour poser les bases de votre communication et définir votre singularité.</p>
+                <ul class="space-y-4 mb-10 text-sm" style="color: #4A5548;">
+                    <li class="flex items-center gap-3 font-medium">✅ Audit de singularité</li>
+                    <li class="flex items-center gap-3 font-medium">✅ Charte graphique essentielle</li>
+                    <li class="flex items-center gap-3 font-medium">✅ Stratégie réseaux sociaux</li>
+                </ul>
+                <a href="contact.html" class="block text-center py-4 rounded-full font-bold border-2 border-[#D58490] text-[#D58490] hover:bg-[#D58490] hover:text-white transition">En savoir plus</a>
+            </div>
+
+            <div class="bg-[#4A5548] rounded-[3rem] p-10 shadow-2xl md:scale-110 relative overflow-hidden text-white border-4 border-[#E9664D30]">
+                <div class="absolute top-6 right-6 bg-[#E9664D] text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Le plus choisi</div>
+                <div class="h-16 w-16 rounded-2xl bg-white/10 flex items-center justify-center text-3xl mb-6">✨</div>
+                <h3 class="text-2xl font-bold mb-4 italic">Le Boost Signature</h3>
+                <p class="text-gray-300 mb-8 text-sm leading-relaxed">L'accompagnement complet pour un rayonnement total et une identité inoubliable.</p>
+                <ul class="space-y-4 mb-10 text-sm">
+                    <li class="flex items-center gap-3 font-medium">✅ Tout le Boost Initial</li>
+                    <li class="flex items-center gap-3 font-medium">✅ Identité visuelle complète</li>
+                    <li class="flex items-center gap-3 font-medium">✅ Création de contenus (1 mois)</li>
+                    <li class="flex items-center gap-3 font-medium">✅ Shooting photo "Branding"</li>
+                </ul>
+                <a href="contact.html" class="block text-center py-4 rounded-full font-bold bg-[#E9664D] text-white hover:bg-white hover:text-[#4A5548] transition shadow-lg">Lancer mon Boost</a>
+            </div>
+
+            <div class="bg-white rounded-[3rem] p-10 shadow-xl border border-gray-100 transition hover:scale-105">
+                <div class="h-16 w-16 rounded-2xl bg-[#f8f6f2] flex items-center justify-center text-3xl mb-6">🚀</div>
+                <h3 class="text-2xl font-bold mb-4" style="color: #4A5548;">Le Boost Impact</h3>
+                <p class="text-gray-500 mb-8 text-sm leading-relaxed">Pour les entreprises qui veulent une stratégie de com' responsable sur le long terme.</p>
+                <ul class="space-y-4 mb-10 text-sm" style="color: #4A5548;">
+                    <li class="flex items-center gap-3 font-medium">✅ Tout le Boost Signature</li>
+                    <li class="flex items-center gap-3 font-medium">✅ Gestion RS annuelle</li>
+                    <li class="flex items-center gap-3 font-medium">✅ Campagnes RP engagées</li>
+                    <li class="flex items-center gap-3 font-medium">✅ Rapport d'impact</li>
+                </ul>
+                <a href="contact.html" class="block text-center py-4 rounded-full font-bold border-2 border-[#D58490] text-[#D58490] hover:bg-[#D58490] hover:text-white transition">Discuter du projet</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="max-w-4xl mx-auto px-6 pb-24 text-center mt-10">
+        <h2 class="text-3xl font-bold mb-16" style="color: #4A5548;">Un accompagnement en 3 temps</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 relative">
+            <div class="space-y-4">
+                <div class="text-5xl font-black opacity-10" style="color: #4A5548;">01</div>
+                <h4 class="font-bold text-lg">L'Immersion</h4>
+                <p class="text-sm text-gray-500">On se rencontre, on écoute votre histoire et on comprend vos valeurs.</p>
+            </div>
+            <div class="space-y-4">
+                <div class="text-5xl font-black opacity-10" style="color: #4A5548;">02</div>
+                <h4 class="font-bold text-lg">La Création</h4>
+                <p class="text-sm text-gray-500">On façonne votre univers visuel et stratégique pour sublimer votre message.</p>
+            </div>
+            <div class="space-y-4">
+                <div class="text-5xl font-black opacity-10" style="color: #4A5548;">03</div>
+                <h4 class="font-bold text-lg">Le Déploiement</h4>
+                <p class="text-sm text-gray-500">On lance vos outils de com' et on observe votre projet rayonner.</p>
+            </div>
+        </div>
+    </section>
+
 </body>
 </html>
