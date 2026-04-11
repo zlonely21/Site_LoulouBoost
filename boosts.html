@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #fdfdfd; }
+        .card-shadow { shadow-xl border border-gray-100 }
     </style>
 </head>
 <body class="text-[#1A1A1A]">
@@ -19,9 +20,9 @@
         
         <div class="flex flex-col md:flex-row items-center gap-6 md:gap-8 font-semibold text-sm text-gray-600">
             <div class="flex gap-6 md:gap-8">
-                <a href="qui.html" class="hover:text-black transition">Loulou qui ?</a>
+                <a href="qui.html" class="hover:text-black transition text-gray-400">Loulou qui ?</a>
                 <a href="boosts.html" class="text-black transition">Les Boosts</a>
-                <a href="temoignages.html" class="hover:text-black transition">Témoignages</a>
+                <a href="temoignages.html" class="hover:text-black transition text-gray-400">Témoignages</a>
             </div>
             <a href="contact.html" class="bg-[#D58490] text-black px-6 py-2.5 rounded-full shadow-sm hover:scale-105 transition transform font-bold text-center">
                 Pret à booster
@@ -78,4 +79,112 @@
                 <a href="contact.html" class="block text-center py-4 rounded-full font-bold bg-[#E9664D] text-white hover:bg-white hover:text-[#4A5548] transition shadow-lg italic">Booster ma com'</a>
             </div>
 
-            <div class="bg-white rounded-[3rem] p-10 shadow-xl border border-gray-100 transition hover:scale-105
+            <div class="bg-white rounded-[3rem] p-10 shadow-xl border border-gray-100 transition hover:scale-105">
+                <span class="text-[#E9664D] font-bold text-xs uppercase tracking-widest">Création One Shot</span>
+                <h3 class="text-2xl font-bold mt-2 mb-4" style="color: #4A5548;">Boost Minute</h3>
+                <p class="text-gray-500 mb-6 text-sm leading-relaxed">Un besoin ponctuel ? Un lancement ? Un événement particulier ?</p>
+                <div class="grid grid-cols-2 gap-4 mb-8">
+                    <div class="p-3 bg-[#f8f6f2] rounded-2xl text-center">
+                        <span class="block text-xs font-bold text-gray-400 uppercase">Réel</span>
+                        <span class="text-lg font-black" style="color: #4A5548;">220€ HT</span>
+                    </div>
+                    <div class="p-3 bg-[#f8f6f2] rounded-2xl text-center">
+                        <span class="block text-xs font-bold text-gray-400 uppercase">Shooting</span>
+                        <span class="text-lg font-black" style="color: #4A5548;">260€ HT</span>
+                    </div>
+                </div>
+                <ul class="space-y-3 mb-10 text-sm" style="color: #4A5548;">
+                    <li class="flex items-start gap-2">🎬 Vidéo courte (jusqu'à 2 min)</li>
+                    <li class="flex items-start gap-2">📸 Mini Shooting (2h - 50 photos)</li>
+                    <li class="flex items-start gap-2">📅 Présence événementielle</li>
+                </ul>
+                <a href="contact.html" class="block text-center py-4 rounded-full font-bold border-2 border-[#D58490] text-[#D58490] hover:bg-[#D58490] hover:text-white transition italic">Réserver un "One Shot"</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="max-w-4xl mx-auto px-6 mb-16 text-center">
+        <p class="text-sm italic text-gray-400 bg-white p-6 rounded-3xl border border-dashed border-gray-200">
+            <span class="text-[#E9664D] font-bold">*</span> Possibilité de compléter avec un service de graphisme en collaboration avec des personnes de confiance.
+        </p>
+    </div>
+
+    <section class="max-w-6xl mx-auto px-6 py-8">
+        <div class="bg-[#f8f6f2] rounded-[4rem] p-8 md:p-12 flex flex-col md:flex-row items-center gap-10 border border-[#4A5548]/10">
+            <div class="md:w-1/3 flex justify-center">
+                <div class="w-40 h-40 bg-white rounded-full flex items-center justify-center shadow-inner border-4 border-white">
+                    <img src="logo.png" alt="Loulou Consulting" class="w-28 h-28 object-contain">
+                </div>
+            </div>
+            <div class="flex-1 text-center md:text-left">
+                <span class="text-[#E9664D] font-bold text-xs uppercase tracking-widest">Consulting en communication</span>
+                <h3 class="text-3xl font-extrabold mt-2 mb-4" style="color: #4A5548;">Com’ à la carte</h3>
+                <p class="text-gray-600 mb-6 leading-relaxed">
+                    1h ou 2h dans un cadre qui vous correspond pour répondre à vos problématiques.
+                    <span class="block mt-2 font-semibold">Repartez avec vos réponses et un mini-guide personnalisé.</span>
+                </p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-6">
+                    <div class="bg-white px-6 py-3 rounded-2xl shadow-sm border border-gray-100">
+                        <span class="block text-xs font-bold text-gray-400 uppercase">1 Heure</span>
+                        <span class="text-xl font-black" style="color: #4A5548;">60€ HT</span>
+                    </div>
+                    <div class="bg-white px-6 py-3 rounded-2xl shadow-sm border border-gray-100">
+                        <span class="block text-xs font-bold text-gray-400 uppercase">2 Heures</span>
+                        <span class="text-xl font-black" style="color: #4A5548;">110€ HT</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-4xl mx-auto px-6 py-24 text-center">
+        <h2 class="text-3xl font-bold mb-16" style="color: #4A5548;">Un accompagnement en 3 temps</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 relative">
+            <div class="space-y-4">
+                <div class="text-5xl font-black opacity-10" style="color: #4A5548;">01</div>
+                <h4 class="font-bold text-lg">L'Immersion</h4>
+                <p class="text-sm text-gray-500">On se rencontre, on écoute votre histoire et on comprend vos valeurs.</p>
+            </div>
+            <div class="space-y-4">
+                <div class="text-5xl font-black opacity-10" style="color: #4A5548;">02</div>
+                <h4 class="font-bold text-lg">La Création</h4>
+                <p class="text-sm text-gray-500">On façonne votre univers visuel et stratégique pour sublimer votre message.</p>
+            </div>
+            <div class="space-y-4">
+                <div class="text-5xl font-black opacity-10" style="color: #4A5548;">03</div>
+                <h4 class="font-bold text-lg">Le Déploiement</h4>
+                <p class="text-sm text-gray-500">On lance vos outils de com' et on observe votre projet rayonner.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-6 py-16 bg-white rounded-[4rem] mb-20 shadow-sm border border-gray-100">
+        <div class="text-center mb-12">
+            <span class="text-gray-400 font-bold text-xs uppercase tracking-widest italic">Faire circuler le positif</span>
+            <h3 class="text-3xl font-extrabold mt-2" style="color: #4A5548;">Parrainage et Avantages</h3>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            <div class="border-2 border-[#E9664D]/10 rounded-[3rem] p-8 text-center hover:bg-[#f8f6f2] transition">
+                <h4 class="text-[#E9664D] font-bold uppercase text-xs tracking-widest mb-4">Marraine - Parrain</h4>
+                <p class="text-2xl font-black mb-4" style="color: #4A5548;">-10% <span class="text-sm font-normal">sur votre prochaine presta</span></p>
+                <p class="text-xs text-gray-300 font-bold mb-4 italic">OU</p>
+                <p class="text-gray-600 text-sm italic">Décidez d'<strong>offrir</strong> un service de com' à une asso locale.</p>
+            </div>
+            <div class="border-2 border-[#E9664D]/10 rounded-[3rem] p-8 text-center hover:bg-[#f8f6f2] transition">
+                <h4 class="text-[#E9664D] font-bold uppercase text-xs tracking-widest mb-4">Filleul.e</h4>
+                <p class="text-2xl font-black mb-4" style="color: #4A5548;">-10% <span class="text-sm font-normal">sur votre 1er mois "Booste ta com"</span></p>
+                <p class="text-xs text-gray-300 font-bold mb-4 italic">OU</p>
+                <p class="text-gray-600 text-sm italic">-10% sur une prestation One Shot de votre choix.</p>
+            </div>
+        </div>
+
+        <div class="p-8 bg-[#4A5548] rounded-[3rem] text-white text-center">
+            <p class="text-lg leading-relaxed max-w-3xl mx-auto">
+                ❤️ <span class="font-bold">Réduction solidaire de -20%</span> pour les associations et les micro-entreprises qui débutent (< 3 ans).
+            </p>
+        </div>
+    </section>
+
+</body>
+</html>
