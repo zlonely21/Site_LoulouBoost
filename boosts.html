@@ -5,195 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Les Boosts - LoulouBoost</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #fdfdfd; }
-        .card-shadow { shadow-xl border border-gray-100 }
-    </style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #fdfdfd; overflow-x: hidden; }
+        .glass-nav { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(10px); }
+        .hover-lift { transition: transform 0.3s ease, shadow 0.3s ease; }
+        .hover-lift:hover { transform: translateY(-10px); }
+    </p>
 </head>
 <body class="text-[#1A1A1A]">
 
-    <nav class="flex flex-col md:flex-row justify-between items-center px-6 py-6 max-w-6xl mx-auto gap-6 md:gap-0">
-        <a href="index.html" class="group flex items-center justify-center h-20 w-20 md:h-24 md:w-24 rounded-full border-4 border-white shadow-lg overflow-hidden p-2.5 transition-all hover:shadow-xl" style="background-color: #f8f6f2;">
-            <img src="logo.png" alt="LoulouBoost" class="w-full h-full object-cover scale-110">
-        </a>
-        
-        <div class="flex flex-col md:flex-row items-center gap-6 md:gap-8 font-semibold text-sm text-gray-600">
-            <div class="flex gap-6 md:gap-8">
-                <a href="qui.html" class="hover:text-black transition text-gray-400">Loulou qui ?</a>
-                <a href="boosts.html" class="text-black transition">Les Boosts</a>
-                <a href="temoignages.html" class="hover:text-black transition text-gray-400">Témoignages</a>
-            </div>
-            <a href="contact.html" class="bg-[#D58490] text-black px-6 py-2.5 rounded-full shadow-sm hover:scale-105 transition transform font-bold text-center">
-                Pret à booster
+    <nav class="fixed top-0 w-full z-50 glass-nav border-b border-gray-100">
+        <div class="flex justify-between items-center px-6 py-4 max-w-6xl mx-auto">
+            <a href="index.html" class="w-12 h-12 rounded-full border-2 border-white shadow-md overflow-hidden bg-[#f8f6f2]">
+                <img src="logo.png" alt="LoulouBoost" class="w-full h-full object-cover">
             </a>
+            <div class="hidden md:flex items-center gap-8 font-semibold text-sm">
+                <a href="qui.html" class="text-gray-400 hover:text-black transition">Loulou qui ?</a>
+                <a href="boosts.html" class="text-black underline decoration-[#E9664D] decoration-2 underline-offset-8">Les Boosts</a>
+                <a href="temoignages.html" class="text-gray-400 hover:text-black transition">Témoignages</a>
+                <a href="contact.html" class="bg-[#D58490] text-black px-6 py-2.5 rounded-full shadow-lg hover:bg-[#E9664D] hover:text-white transition duration-300 transform hover:scale-105 active:scale-95 font-bold">
+                    Prêt à booster
+                </a>
+            </div>
         </div>
     </nav>
 
-    <header class="max-w-5xl mx-auto text-center mt-16 px-6">
+    <header class="max-w-5xl mx-auto text-center mt-32 px-6" data-aos="fade-up">
         <div class="inline-block px-5 py-2 mb-8 text-sm font-extrabold tracking-widest uppercase rounded-full" 
              style="color: #4A5548; background-color: #f8f6f2; border: 1px solid #4A554830;">
             Les Accompagnements
         </div>
-        <h1 class="text-5xl md:text-6xl font-extrabold mb-8" style="color: #4A5548;">
-            Vos <span style="color: #E9664D;" class="italic">Boosts</span> sur-mesure.
+        <h1 class="text-5xl md:text-7xl font-extrabold mb-8 leading-tight" style="color: #4A5548;">
+            Vos <span style="color: #E9664D;" class="italic">Boosts</span><br>sur-mesure.
         </h1>
-        <p class="text-xl text-gray-500 max-w-3xl mx-auto mb-10 leading-relaxed">
-            Nous accompagnons les acteurs engagés dans leur déploiement créatif et stratégique.<br>
-            <span class="font-bold" style="color: #4A5548;">Sublimons votre singularité en votre plus beau rayonnement.</span>
+        <p class="text-xl text-gray-500 max-w-2xl mx-auto mb-10 leading-relaxed">
+            Sublimons votre singularité en votre <span class="text-[#4A5548] font-bold">plus beau rayonnement.</span>
         </p>
     </header>
 
     <section class="max-w-6xl mx-auto px-6 py-16">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
-            
-            <div class="bg-white rounded-[3rem] p-10 shadow-xl border border-gray-100 transition hover:scale-105">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div data-aos="fade-up" data-aos-delay="100" class="hover-lift bg-white rounded-[3rem] p-10 shadow-xl border border-gray-100">
                 <span class="text-[#E9664D] font-bold text-xs uppercase tracking-widest">Le Pack Lancement</span>
                 <h3 class="text-2xl font-bold mt-2 mb-4" style="color: #4A5548;">Coup de Boost</h3>
-                <p class="text-gray-500 mb-6 text-sm leading-relaxed">Pour (re)partir sur de bonnes bases et poser une communication claire et alignée.</p>
-                <div class="text-2xl font-black mb-8" style="color: #4A5548;">1100€ <span class="text-sm font-normal text-gray-400">HT</span></div>
-                <ul class="space-y-3 mb-10 text-sm" style="color: #4A5548;">
-                    <li class="flex items-start gap-2">✨ Audit / Benchmark</li>
-                    <li class="flex items-start gap-2">✨ Refonte bio & Paramétrage</li>
-                    <li class="flex items-start gap-2">✨ 9 publications incluses</li>
-                    <li class="flex items-start gap-2">✨ Plan éditorial & Templates</li>
+                <div class="text-2xl font-black mb-8">1100€ <span class="text-sm font-normal text-gray-400">HT</span></div>
+                <ul class="space-y-3 mb-10 text-sm">
+                    <li>✨ Audit / Benchmark</li>
+                    <li>✨ Refonte bio & Paramétrage</li>
+                    <li>✨ 9 publications incluses</li>
                 </ul>
-                <a href="contact.html" class="block text-center py-4 rounded-full font-bold border-2 border-[#D58490] text-[#D58490] hover:bg-[#D58490] hover:text-white transition italic">Je veux ce pack</a>
+                <a href="#" class="block text-center py-4 rounded-full font-bold border-2 border-[#D58490] text-[#D58490] hover:bg-[#D58490] hover:text-white transition italic">Je veux ce pack</a>
             </div>
 
-            <div class="bg-[#4A5548] rounded-[3rem] p-10 shadow-2xl md:scale-110 relative overflow-hidden text-white border-4 border-[#E9664D30]">
-                <div class="absolute top-6 right-6 bg-[#E9664D] text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Le plus complet</div>
-                <span class="text-[#E9664D] font-bold text-xs uppercase tracking-widest">Gestion Mensuelle</span>
-                <h3 class="text-2xl font-bold mt-2 mb-4 italic text-white">Booste ta com'</h3>
-                <p class="text-gray-300 mb-6 text-sm leading-relaxed">Accompagnement sur 6 mois ou 1 an pour une sérénité totale sur vos réseaux.</p>
+            <div data-aos="fade-up" data-aos-delay="200" class="hover-lift bg-[#4A5548] rounded-[3rem] p-10 shadow-2xl md:scale-110 relative text-white">
+                <div class="absolute top-6 right-6 bg-[#E9664D] text-white text-[10px] font-bold px-3 py-1 rounded-full">LE PLUS COMPLET</div>
+                <h3 class="text-2xl font-bold mt-2 mb-4 italic">Booste ta com'</h3>
                 <div class="mb-8">
                     <span class="block text-3xl font-black italic">580€ <span class="text-sm font-normal opacity-60">HT / mois</span></span>
-                    <span class="text-[10px] opacity-70">(1er mois : 1100€ HT avec audit inclus)</span>
                 </div>
                 <ul class="space-y-3 mb-10 text-sm">
-                    <li class="flex items-start gap-2">✅ 2 à 3 publications / semaine</li>
-                    <li class="flex items-start gap-2">✅ Création visuels & Copywriting</li>
-                    <li class="flex items-start gap-2">✅ Shooting / Tournage inclus</li>
-                    <li class="flex items-start gap-2">✅ Reporting trimestriel</li>
+                    <li>✅ 2 à 3 publications / semaine</li>
+                    <li>✅ Shooting / Tournage inclus</li>
+                    <li>✅ Reporting trimestriel</li>
                 </ul>
-                <a href="contact.html" class="block text-center py-4 rounded-full font-bold bg-[#E9664D] text-white hover:bg-white hover:text-[#4A5548] transition shadow-lg italic">Booster ma com'</a>
+                <a href="#" class="block text-center py-4 rounded-full font-bold bg-[#E9664D] text-white shadow-lg transition italic">Booster ma com'</a>
             </div>
 
-            <div class="bg-white rounded-[3rem] p-10 shadow-xl border border-gray-100 transition hover:scale-105">
+            <div data-aos="fade-up" data-aos-delay="300" class="hover-lift bg-white rounded-[3rem] p-10 shadow-xl border border-gray-100">
                 <span class="text-[#E9664D] font-bold text-xs uppercase tracking-widest">Création One Shot</span>
                 <h3 class="text-2xl font-bold mt-2 mb-4" style="color: #4A5548;">Boost Minute</h3>
-                <p class="text-gray-500 mb-6 text-sm leading-relaxed">Un besoin ponctuel ? Un lancement ? Un événement particulier ?</p>
-                <div class="grid grid-cols-2 gap-4 mb-8">
-                    <div class="p-3 bg-[#f8f6f2] rounded-2xl text-center">
-                        <span class="block text-xs font-bold text-gray-400 uppercase">Réel</span>
-                        <span class="text-lg font-black" style="color: #4A5548;">220€ HT</span>
-                    </div>
-                    <div class="p-3 bg-[#f8f6f2] rounded-2xl text-center">
-                        <span class="block text-xs font-bold text-gray-400 uppercase">Shooting</span>
-                        <span class="text-lg font-black" style="color: #4A5548;">260€ HT</span>
-                    </div>
+                <div class="grid grid-cols-2 gap-4 mb-8 text-center">
+                    <div class="p-3 bg-[#f8f6f2] rounded-2xl font-black">220€</div>
+                    <div class="p-3 bg-[#f8f6f2] rounded-2xl font-black">260€</div>
                 </div>
-                <ul class="space-y-3 mb-10 text-sm" style="color: #4A5548;">
-                    <li class="flex items-start gap-2">🎬 Vidéo courte (jusqu'à 2 min)</li>
-                    <li class="flex items-start gap-2">📸 Mini Shooting (2h - 50 photos)</li>
-                    <li class="flex items-start gap-2">📅 Présence événementielle</li>
-                </ul>
-                <a href="contact.html" class="block text-center py-4 rounded-full font-bold border-2 border-[#D58490] text-[#D58490] hover:bg-[#D58490] hover:text-white transition italic">Réserver un "One Shot"</a>
+                <a href="#" class="block text-center py-4 rounded-full font-bold border-2 border-[#D58490] text-[#D58490] hover:bg-[#D58490] hover:text-white transition italic">Réserver</a>
             </div>
         </div>
     </section>
 
-    <div class="max-w-3xl mx-auto px-6 mb-20">
-    <div class="flex items-center gap-4 bg-[#f8f6f2] p-4 md:p-6 rounded-2xl border-l-4 border-[#E9664D]">
-        <span class="text-2xl text-[#E9664D]">✨</span>
-        <p class="text-sm md:text-base italic text-[#4A5548] leading-relaxed">
-            <strong>Besoin de visuels sur-mesure ?</strong> Je collabore avec des graphistes de confiance pour compléter vos Boosts selon vos besoins spécifiques.
-        </p>
-    </div>
-</div>
-
-    <section class="max-w-6xl mx-auto px-6 py-8">
-        <div class="bg-[#f8f6f2] rounded-[4rem] p-8 md:p-12 flex flex-col md:flex-row items-center gap-10 border border-[#4A5548]/10">
-            <div class="md:w-1/3 flex justify-center">
-                <div class="w-40 h-40 bg-white rounded-full flex items-center justify-center shadow-inner border-4 border-white">
-                    <img src="logo.png" alt="Loulou Consulting" class="w-28 h-28 object-contain">
-                </div>
-            </div>
-            <div class="flex-1 text-center md:text-left">
-                <span class="text-[#E9664D] font-bold text-xs uppercase tracking-widest">Consulting en communication</span>
-                <h3 class="text-3xl font-extrabold mt-2 mb-4" style="color: #4A5548;">Com’ à la carte</h3>
-                <p class="text-gray-600 mb-6 leading-relaxed">
-                    1h ou 2h dans un cadre qui vous correspond pour répondre à vos problématiques.
-                    <span class="block mt-2 font-semibold">Repartez avec vos réponses et un mini-guide personnalisé.</span>
-                </p>
-                <div class="flex flex-wrap justify-center md:justify-start gap-6">
-                    <div class="bg-white px-6 py-3 rounded-2xl shadow-sm border border-gray-100">
-                        <span class="block text-xs font-bold text-gray-400 uppercase">1 Heure</span>
-                        <span class="text-xl font-black" style="color: #4A5548;">60€ HT</span>
-                    </div>
-                    <div class="bg-white px-6 py-3 rounded-2xl shadow-sm border border-gray-100">
-                        <span class="block text-xs font-bold text-gray-400 uppercase">2 Heures</span>
-                        <span class="text-xl font-black" style="color: #4A5548;">110€ HT</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-<section class="max-w-5xl mx-auto px-6 py-24">
-    <div class="text-center mb-16">
-        <h2 class="text-3xl font-extrabold" style="color: #4A5548;">Un accompagnement en 3 temps</h2>
-        <div class="w-20 h-1 bg-[#E9664D] mx-auto mt-4 rounded-full"></div>
-    </div>
-    
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-        <div class="relative p-8 bg-[#f8f6f2] rounded-[3rem] text-center transition hover:rotate-2">
-            <div class="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 bg-[#4A5548] text-white rounded-full flex items-center justify-center font-bold shadow-lg">01</div>
-            <h4 class="font-bold text-xl mb-4" style="color: #4A5548;">L'Immersion</h4>
-            <p class="text-sm text-gray-600 leading-relaxed">On se rencontre, on écoute votre histoire et on comprend vos valeurs profondes.</p>
-        </div>
-
-        <div class="relative p-8 bg-white border-2 border-[#f8f6f2] rounded-[3rem] text-center transition hover:-rotate-2 shadow-sm">
-            <div class="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 bg-[#E9664D] text-white rounded-full flex items-center justify-center font-bold shadow-lg">02</div>
-            <h4 class="font-bold text-xl mb-4" style="color: #4A5548;">La Création</h4>
-            <p class="text-sm text-gray-600 leading-relaxed">On façonne votre univers visuel et stratégique pour sublimer votre message.</p>
-        </div>
-
-        <div class="relative p-8 bg-[#f8f6f2] rounded-[3rem] text-center transition hover:rotate-2">
-            <div class="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 bg-[#4A5548] text-white rounded-full flex items-center justify-center font-bold shadow-lg">03</div>
-            <h4 class="font-bold text-xl mb-4" style="color: #4A5548;">Le Déploiement</h4>
-            <p class="text-sm text-gray-600 leading-relaxed">On lance vos outils de com' et on observe votre projet rayonner durablement.</p>
+    <div class="max-w-3xl mx-auto px-6 mb-24" data-aos="zoom-in">
+        <div class="flex items-center gap-4 bg-[#f8f6f2] p-6 rounded-3xl border-l-8 border-[#E9664D] shadow-sm">
+            <span class="text-3xl">🎨</span>
+            <p class="italic text-[#4A5548]"><strong>Besoin de visuels ?</strong> Je collabore avec des graphistes de confiance pour vos besoins spécifiques.</p>
         </div>
     </div>
-</section>
 
-    <section class="max-w-6xl mx-auto px-6 py-16 bg-white rounded-[4rem] mb-20 shadow-sm border border-gray-100">
-        <div class="text-center mb-12">
-            <span class="text-gray-400 font-bold text-xs uppercase tracking-widest italic">Faire circuler le positif</span>
-            <h3 class="text-3xl font-extrabold mt-2" style="color: #4A5548;">Parrainage et Avantages</h3>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-            <div class="border-2 border-[#E9664D]/10 rounded-[3rem] p-8 text-center hover:bg-[#f8f6f2] transition">
-                <h4 class="text-[#E9664D] font-bold uppercase text-xs tracking-widest mb-4">Marraine - Parrain</h4>
-                <p class="text-2xl font-black mb-4" style="color: #4A5548;">-10% <span class="text-sm font-normal">sur votre prochaine presta</span></p>
-                <p class="text-xs text-gray-300 font-bold mb-4 italic">OU</p>
-                <p class="text-gray-600 text-sm italic">Décidez d'<strong>offrir</strong> un service de com' à une asso locale.</p>
-            </div>
-            <div class="border-2 border-[#E9664D]/10 rounded-[3rem] p-8 text-center hover:bg-[#f8f6f2] transition">
-                <h4 class="text-[#E9664D] font-bold uppercase text-xs tracking-widest mb-4">Filleul.e</h4>
-                <p class="text-2xl font-black mb-4" style="color: #4A5548;">-10% <span class="text-sm font-normal">sur votre 1er mois "Booste ta com"</span></p>
-                <p class="text-xs text-gray-300 font-bold mb-4 italic">OU</p>
-                <p class="text-gray-600 text-sm italic">-10% sur une prestation One Shot de votre choix.</p>
-            </div>
-        </div>
-
-        <div class="p-8 bg-[#4A5548] rounded-[3rem] text-white text-center">
-            <p class="text-lg leading-relaxed max-w-3xl mx-auto">
-                ❤️ <span class="font-bold">Réduction solidaire de -20%</span> pour les associations et les micro-entreprises qui débutent (< 3 ans).
-            </p>
-        </div>
-    </section>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+    </script>
 </body>
 </html>
