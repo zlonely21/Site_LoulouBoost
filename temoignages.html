@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LoulouBoost - Guide Durable</title>
+    <title>LoulouBoost - Témoignages</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
     <style>
@@ -12,21 +12,125 @@
 </head>
 <body class="text-[#1A1A1A]">
 
+    <!-- NAVIGATION -->
     <nav class="flex justify-between items-center px-6 py-6 max-w-6xl mx-auto">
         <a href="index.html" class="group flex items-center justify-center h-20 w-20 md:h-24 md:w-24 rounded-full border-4 border-white shadow-lg overflow-hidden p-2.5 transition-all hover:shadow-xl" style="background-color: #f8f6f2;">
-    <img src="logo.png" alt="LoulouBoost" class="w-full h-full object-cover scale-110">
-</a>
+            <img src="logo.png" alt="LoulouBoost" class="w-full h-full object-cover scale-110">
+        </a>
         <div class="hidden md:flex space-x-8 font-semibold text-sm text-gray-600 items-center">
-            <a href="#" class="hover:text-black">Loulou qui ?</a>
-            <a href="#" class="hover:text-black">Les Boosts</a>
-            <a href="#" class="hover:text-black">Témoignages</a>
-            <a href="#" class="bg-[#D58490] text-black px-5 py-2.5 rounded-full shadow-sm hover:scale-105 transition transform">Pret à booster</a>
+            <a href="qui.html" class="hover:text-black">Loulou qui ?</a>
+            <a href="boosts.html" class="hover:text-black">Les Boosts</a>
+            <a href="temoignages.html" class="text-black font-bold">Témoignages</a>
+            <a href="contact.html" class="bg-[#D58490] text-black px-5 py-2.5 rounded-full shadow-sm hover:scale-105 transition transform font-semibold">Prêt à booster</a>
         </div>
     </nav>
-    <main class="max-w-4xl mx-auto mt-20 px-6 pb-20">
-        <h1 class="text-4xl font-extrabold mb-8">Titre de ma page</h1>
-        <p class="text-lg text-gray-600 leading-relaxed">
-            Ici, tu écris ton texte personnalisé pour présenter ton projet ou tes témoignages.
-        </p>
+
+    <!-- CONTENU PRINCIPAL : TÉMOIGNAGES -->
+    <main class="max-w-6xl mx-auto mt-10 px-6 pb-20">
+        
+        <!-- En-tête -->
+        <div class="text-center mb-16">
+            <span class="text-[#E9664D] font-bold text-xs uppercase tracking-widest block mb-2">Avis Clients</span>
+            <h1 class="text-4xl md:text-5xl font-extrabold text-[#4A5548] mb-4">Ils m'ont fait confiance</h1>
+            <div class="inline-flex items-center gap-2 bg-[#f8f6f2] px-5 py-2 rounded-full border border-gray-100 shadow-sm mt-2">
+                <span class="text-yellow-400 text-lg">★★★★★</span>
+                <span class="text-xs font-bold text-[#4A5548]">5/5 sur Google</span>
+            </div>
+        </div>
+
+        <!-- Grille des témoignages -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+
+            <!-- TÉMOIGNAGE 1 : Audrey R. -->
+            <div class="flex flex-col justify-between bg-white rounded-[2.5rem] p-8 shadow-lg border border-gray-100 transition hover:shadow-xl">
+                <div>
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="text-yellow-400 text-sm tracking-widest">★★★★★</div>
+                        <span class="text-[10px] font-bold text-gray-400 uppercase tracking-wider bg-[#f8f6f2] px-3 py-1 rounded-full border border-gray-100">Avis Google</span>
+                    </div>
+                    <p class="text-gray-600 italic text-sm leading-relaxed mb-8">
+                        « J'ai confié à Loulou Boost mon démarrage de communication. Elle a tout de suite réussi à cerner l'esprit de l'entreprise et proposer une communication qui me correspond totalement ! Merci Louise pour ton travail et tes conseils ! »
+                    </p>
+                </div>
+                <div class="flex items-center gap-4 pt-4 border-t border-gray-100">
+                    <div class="w-12 h-12 rounded-full bg-[#E9664D15] text-[#E9664D] font-bold flex items-center justify-center text-sm">
+                        AR
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-[#4A5548] text-base">Audrey R.</h4>
+                        <span class="text-xs text-gray-400">Recommandation Google</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TÉMOIGNAGE 2 : Aurélien B. -->
+            <div class="flex flex-col justify-between bg-white rounded-[2.5rem] p-8 shadow-lg border border-gray-100 transition hover:shadow-xl">
+                <div>
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="text-yellow-400 text-sm tracking-widest">★★★★★</div>
+                        <span class="text-[10px] font-bold text-gray-400 uppercase tracking-wider bg-[#f8f6f2] px-3 py-1 rounded-full border border-gray-100">Avis Google</span>
+                    </div>
+                    <p class="text-gray-600 italic text-sm leading-relaxed mb-8">
+                        « Louise m'a accompagné du début jusqu'à la fin du projet, de la création de la page Facebook jusqu'à l'élaboration du logo ! Louise est à l'écoute, bienveillante et très professionnelle. »
+                    </p>
+                </div>
+                <div class="flex items-center gap-4 pt-4 border-t border-gray-100">
+                    <div class="w-12 h-12 rounded-full bg-[#4A554815] text-[#4A5548] font-bold flex items-center justify-center text-sm">
+                        AB
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-[#4A5548] text-base">Aurélien B.</h4>
+                        <span class="text-xs text-gray-400">Recommandation Google</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TÉMOIGNAGE 3 : Maé T. -->
+            <div class="flex flex-col justify-between bg-white rounded-[2.5rem] p-8 shadow-lg border border-gray-100 transition hover:shadow-xl">
+                <div>
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="text-yellow-400 text-sm tracking-widest">★★★★★</div>
+                        <span class="text-[10px] font-bold text-gray-400 uppercase tracking-wider bg-[#f8f6f2] px-3 py-1 rounded-full border border-gray-100">Avis Google</span>
+                    </div>
+                    <p class="text-gray-600 italic text-sm leading-relaxed mb-8">
+                        « J'ai eu plusieurs occasions de travailler avec Louise et c'est une vraie bouffée d'air frais. Au-delà de son expertise en communication, c'est sa sincérité et son énergie qui font la différence. »
+                    </p>
+                </div>
+                <div class="flex items-center gap-4 pt-4 border-t border-gray-100">
+                    <div class="w-12 h-12 rounded-full bg-[#D5849020] text-[#D58490] font-bold flex items-center justify-center text-sm">
+                        TM
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-[#4A5548] text-base">Maé T.</h4>
+                        <span class="text-xs text-gray-400">Recommandation Google</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TÉMOIGNAGE 4 : Fabien P. -->
+            <div class="flex flex-col justify-between bg-white rounded-[2.5rem] p-8 shadow-lg border border-gray-100 transition hover:shadow-xl">
+                <div>
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="text-yellow-400 text-sm tracking-widest">★★★★★</div>
+                        <span class="text-[10px] font-bold text-gray-400 uppercase tracking-wider bg-[#f8f6f2] px-3 py-1 rounded-full border border-gray-100">Avis Google</span>
+                    </div>
+                    <p class="text-gray-600 italic text-sm leading-relaxed mb-8">
+                        « Loulou Boost mérite une recommandation 5 étoiles pour son approche personnalisée du besoin client. Elle propose une communication authentique, pétillante et ultra efficace ! »
+                    </p>
+                </div>
+                <div class="flex items-center gap-4 pt-4 border-t border-gray-100">
+                    <div class="w-12 h-12 rounded-full bg-[#E9664D15] text-[#E9664D] font-bold flex items-center justify-center text-sm">
+                        FP
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-[#4A5548] text-base">Fabien P.</h4>
+                        <span class="text-xs text-gray-400">Recommandation Google</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </main>
+
 </body>
+</html>
